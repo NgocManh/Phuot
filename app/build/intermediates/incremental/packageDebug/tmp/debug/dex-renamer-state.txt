@@ -1,4 +1,4 @@
-#Sun May 13 11:39:23 ICT 2018
+#Sun May 13 14:45:38 ICT 2018
 base.0=C\:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 path.1=classes.dex
 renamed.1=classes2.dex

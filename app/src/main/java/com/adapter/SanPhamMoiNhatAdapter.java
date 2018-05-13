@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.phonglinh.phuot.ChiTietSanPham;
 import com.example.phonglinh.phuot.R;
@@ -72,6 +73,7 @@ public class SanPhamMoiNhatAdapter extends RecyclerView.Adapter<SanPhamMoiNhatAd
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, ChiTietSanPham.class);
+                    intent.putExtra("thongtinsanpham", arr.get(getAdapterPosition()));
                     context.startActivity(intent);
                 }
             });

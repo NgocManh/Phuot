@@ -77,11 +77,17 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<SanPham>> call, Response<List<SanPham>> response) {
 
                 arrSanPham = (ArrayList<SanPham>) response.body();
-                Collections.shuffle(arrSanPham);
+                /*Collections.shuffle(arrSanPham);*/
                 SanPhamMoiNhatAdapter adapter = new SanPhamMoiNhatAdapter(arrSanPham);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
                 recyclerView.setAdapter(adapter);
+               /* recyclerView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        v.setId()
+                    }
+                });*/
 
             }
 
