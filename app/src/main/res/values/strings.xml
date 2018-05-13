@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Phuot</string>
+    <string name="title_activity_do_da_ngoai">DoDaNgoai</string>
+    <string name="title_activity_do_bao_ho">DoBaoHo</string>
+</resources>
