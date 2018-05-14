@@ -11,6 +11,7 @@
 
     <android.support.v7.widget.Toolbar
         app:title="Giỏ hàng"
+        android:background="#ec7474"
         android:id="@+id/toolBar_giohang"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"/>
@@ -32,7 +33,7 @@
             <TextView
                 android:layout_gravity="center"
                 android:id="@+id/tvFlag"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:text="Giỏ hàng bạn đang trống"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

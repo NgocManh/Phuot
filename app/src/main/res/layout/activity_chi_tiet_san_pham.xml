@@ -9,7 +9,7 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolBar_chitietsp"
-        android:background="#E6CFAF"
+        android:background="#dc8683"
         app:title="Chi tiết sản phẩm"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"/>

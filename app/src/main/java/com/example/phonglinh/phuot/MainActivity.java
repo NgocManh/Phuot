@@ -199,10 +199,11 @@ public class MainActivity extends AppCompatActivity {
 
         viewFlipper.setFlipInterval(5000);
         viewFlipper.setAutoStart(true);
-        Animation slide_left = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_left);
-        Animation slide_right = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_right);
-        viewFlipper.setInAnimation(slide_left);
-        viewFlipper.setOutAnimation(slide_right);
+        Animation slide_in  = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_right);
+        Animation slide_out  = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_left);
+
+        viewFlipper.setInAnimation(slide_in);
+        viewFlipper.setOutAnimation(slide_out);
     }
 
     @Override

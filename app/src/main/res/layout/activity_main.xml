@@ -17,7 +17,7 @@
             android:layout_height="match_parent">
             <android.support.v7.widget.Toolbar
                 app:title="Trang chủ"
-                android:background="#b48f8f"
+                android:background="#de9898"
                 android:id="@+id/toolBar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"/>
@@ -29,7 +29,7 @@
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerView"
-                android:background="#634747"
+                android:background="#b48f8f"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             </android.support.v7.widget.RecyclerView>
@@ -38,12 +38,14 @@
 
         <android.support.design.widget.NavigationView
             android:id="@+id/naviView"
+            android:background="#de9898"
             android:layout_gravity= "start"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ListView
                 android:id="@+id/lvNavi"
+                android:background="#de9898"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </ListView>

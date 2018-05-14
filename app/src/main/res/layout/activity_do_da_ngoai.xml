@@ -11,11 +11,13 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolBar_dodangoai"
         app:title="Đồ dã ngoại"
+        android:background="#dc8683"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_dodangoai"
+        android:background="#b48f8f"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

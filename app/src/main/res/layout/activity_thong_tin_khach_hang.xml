@@ -72,7 +72,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:textColor="#28588c"
+            android:background="#6af1ff"
+            android:textSize="15sp"
+            android:text="Trở về"
+            android:padding="10dp"
+            android:id="@+id/btnBack_ttkh"
             android:layout_marginRight="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+
             android:textColor="#28588c"
             android:background="#6af1ff"
             android:textSize="15sp"
@@ -82,15 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <Button
-            android:textColor="#28588c"
-            android:background="#6af1ff"
-            android:textSize="15sp"
-            android:text="Trở về"
-            android:padding="10dp"
-            android:id="@+id/btnBack_ttkh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
 </LinearLayout>
