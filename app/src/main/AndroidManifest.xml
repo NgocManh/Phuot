@@ -22,7 +22,9 @@
         <activity android:name=".DoBaoHo" />
         <activity android:name=".DoDaNgoai" />
         <activity android:name=".LienHe" />
-        <activity android:name=".ChiTietSanPham"></activity>
+        <activity android:name=".ChiTietSanPham" />
+        <activity android:name=".GioHang" />
+        <activity android:name=".ThongTinKhachHang"></activity>
     </application>
 
 </manifest>

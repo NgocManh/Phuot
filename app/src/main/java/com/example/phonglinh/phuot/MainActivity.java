@@ -23,6 +23,7 @@ import com.Retrofit.DataClient;
 import com.Ultil.CheckConnectInternet;
 import com.adapter.LoaiSanPhamAdapter;
 import com.adapter.SanPhamMoiNhatAdapter;
+import com.model.Giohang;
 import com.model.LoaiSanPham;
 import com.model.SanPham;
 import com.squareup.picasso.Picasso;
@@ -47,8 +48,19 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<LoaiSanPham> arrLoaiSanPham = new ArrayList<>();
     ArrayList<SanPham> arrSanPham = new ArrayList<>();
 
-    ArrayList<SanPham> arrDoBaoHo = new ArrayList<>();
+    public static ArrayList<Giohang> giohang;
 
+    public static long tongTien()
+    {
+        long sum = 0;
+
+        for(Giohang x: MainActivity.giohang)
+        {
+            sum += x.soluong * x.price;
+        }
+
+        return sum;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -71,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void actionSanPhamMoiNhat() {
 
+        
         Call<List<SanPham>> call = APIUtils.getData().getListSanPham();
         call.enqueue(new Callback<List<SanPham>>() {
             @Override
@@ -82,13 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
                 recyclerView.setAdapter(adapter);
-               /* recyclerView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        v.setId()
-                    }
-                });*/
-
+                Toast.makeText(MainActivity.this, "lai vao day", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -205,6 +212,8 @@ public class MainActivity extends AppCompatActivity {
         lvNavi = findViewById(R.id.lvNavi);
         drawerLayout = findViewById(R.id.drawerLayout);
 
+        if(giohang == null) giohang = new ArrayList<>();
+        else Toast.makeText(this, "welcome", Toast.LENGTH_SHORT).show();
     }
 
 
