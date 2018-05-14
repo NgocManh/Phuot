@@ -420,6 +420,10 @@
         "source": "C:\\Users\\Phong Linh\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c68f6accb61e38392082fbd2424f3264\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cart2.png.flat",
+        "source": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\src\\main\\res\\drawable\\cart2.png"
+    },
+    {
         "merged": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
         "source": "C:\\Users\\Phong Linh\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\119e4918a58e4ab047837f44b4ce0b83\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
@@ -1352,6 +1356,10 @@
         "source": "C:\\Users\\Phong Linh\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\119e4918a58e4ab047837f44b4ce0b83\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
+        "merged": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cart.png.flat",
+        "source": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\src\\main\\res\\drawable\\cart.png"
+    },
+    {
         "merged": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Phong Linh\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\119e4918a58e4ab047837f44b4ce0b83\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
@@ -1682,6 +1690,10 @@
     {
         "merged": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Phong Linh\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\119e4918a58e4ab047837f44b4ce0b83\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
+        "source": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
         "merged": "C:\\Users\\Phong Linh\\AndroidStudioProjects\\Phuot\\app\\build\\intermediates\\res\\merged\\debug\\layout_dong_sanpham.xml.flat",

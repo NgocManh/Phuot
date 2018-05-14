@@ -26,7 +26,7 @@ public interface DataClient {
     @GET("sanpham/dobaoho")
     Call<List<SanPham>> getListDoBaoHo();
 
-    @POST
+    @POST("donhang")
     Call<ResultBO> createHoaDon(@Body Donhang donhang);
 
 

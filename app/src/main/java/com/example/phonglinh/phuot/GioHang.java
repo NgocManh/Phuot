@@ -48,9 +48,9 @@ public class GioHang extends AppCompatActivity {
                 if(MainActivity.giohang.size() <= 0)
 
                     Toast.makeText(GioHang.this, "Giỏ hàng rỗng", Toast.LENGTH_SHORT).show();
-
                 else
                 {
+
                     Intent intent = new Intent(getApplicationContext(), ThongTinKhachHang.class);
                     startActivity(intent);
                 }
@@ -59,7 +59,6 @@ public class GioHang extends AppCompatActivity {
             }
         });
     }
-
 
     private void actionButtonTiepTuc() {
         btnTiepTuc.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +86,7 @@ public class GioHang extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                startActivity(new Intent(getApplicationContext(),MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             }
         });
     }

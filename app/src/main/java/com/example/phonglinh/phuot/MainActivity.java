@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -90,13 +92,12 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<SanPham>> call, Response<List<SanPham>> response) {
 
                 arrSanPham = (ArrayList<SanPham>) response.body();
-                Toast.makeText(MainActivity.this, arrSanPham.size()+"", Toast.LENGTH_SHORT).show();
+
                 /*Collections.shuffle(arrSanPham);*/
                 SanPhamMoiNhatAdapter adapter = new SanPhamMoiNhatAdapter(arrSanPham);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
                 recyclerView.setAdapter(adapter);
-                Toast.makeText(MainActivity.this, "lai vao day", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -204,6 +205,23 @@ public class MainActivity extends AppCompatActivity {
         viewFlipper.setOutAnimation(slide_right);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.menugiohang:
+                Intent intent = new Intent(getApplicationContext(), GioHang.class);
+                startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void init() {
 
         toolbar = findViewById(R.id.toolBar);
@@ -214,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
 
         if(giohang == null) giohang = new ArrayList<>();
-        else Toast.makeText(this, "welcome", Toast.LENGTH_SHORT).show();
+
     }
 
 
