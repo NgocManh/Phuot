@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<SanPham>> call, Response<List<SanPham>> response) {
 
                 arrSanPham = (ArrayList<SanPham>) response.body();
+                Toast.makeText(MainActivity.this, arrSanPham.size()+"", Toast.LENGTH_SHORT).show();
                 /*Collections.shuffle(arrSanPham);*/
                 SanPhamMoiNhatAdapter adapter = new SanPhamMoiNhatAdapter(arrSanPham);
                 recyclerView.setHasFixedSize(true);
